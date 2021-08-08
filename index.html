@@ -6,25 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Henkes Kevin</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="app.js">
     <script src="https://kit.fontawesome.com/f57d76244d.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <nav>
+    <nav id="navbar">
         <ul>
             <li>A propos</li>
             <li>Mes compétences</li>
             <li>Me contacter</li>
         </ul>
-        <i class="fas fa-ellipsis-h"></i>
+        <i class="fas fa-bars"></i>
     </nav>
 
     <section class="hero">   
         <div class="hero_text">
             <hr>
             <h1>Henkes Kevin</h1>
-            <h2>Développeur <span>front-end</span></h2>
+            <h2>Développeur <span>FRONT-END</span></h2>
             <hr>
             <div class="hero_icons">
                 <i class="fab fa-linkedin"></i>
@@ -32,20 +31,51 @@
                 <i class="fas fa-envelope-square"></i>
             </div>
         </div>
+    <div class="container_drawing">
         <div class="computer_drawing">
             <div class="screen">
                 <span><code>< h1 > Hello World < / h1 ></h1></code></span>
                 <br />
             </div>
             <div class="stand"></div>
-            <div class="keyboard"></div>
+            <div class="keyboard">
+                <div class="space_bar"></div>
+            </div>
         </div>
+    </div>
 
     </section>
 
     <section class="about">
 
+        <div class="container_about">
+            <div class="squares_about">
+                <div class="square_1"></div>
+                <div class="square_2"></div>
+            </div>
+            <div class="text_about">
+                <h2>A propos</h2>
+                <hr />
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, at corporis repellat doloribus, eius voluptate, nobis id maiores magni facilis maxime reprehenderit cumque quaerat quae consequuntur neque ea porro alias ipsam suscipit sint et adipisci?</p>
+                <button class="btn_about">
+                    <a href="http://">Télécharger mon CV</a>
+                </button>
+            </div>
+        </div>
+
+        <div class="hobbies">
+            <h3>Mes centres d'intêrets</h3>
+            <hr>
+            <div class="hobbies_icons">
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github-square"></i>
+                <i class="fas fa-envelope-square"></i>
+                <i class="fas fa-envelope-square"></i>
+            </div>
+        </div>
+
     </section>
     
+    <script src="app.js"></script>
 </body>
 </html>
