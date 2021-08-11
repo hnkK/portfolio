@@ -1,0 +1,51 @@
+.skills_section {
+  height: 100vh;
+}
+
+.skills_section h3 {
+  color: #fff;
+  font-weight: lighter;
+  font-size: 2.6rem;
+  text-align: center;
+}
+
+.skills_section h4 {
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+  font-family: MADE TOMMY;
+  font-weight: lighter;
+  font-size: 2rem;
+}
+
+.skills_section .skills_list {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills_section .skill {
+  color: #fff;
+  width: 90px;
+  margin-right: 25px;
+  margin-left: 25px;
+  text-align: center;
+}
+
+.skills_section .skill i {
+  font-size: 3rem;
+}
+
+.skills_section .also_skills {
+  color: #fff;
+  text-align: center;
+}
+
+.skills_section .also_skills ul li {
+  display: inline-block;
+}
+/*# sourceMappingURL=skills.css.map */

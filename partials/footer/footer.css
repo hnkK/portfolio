@@ -1,0 +1,18 @@
+footer {
+  background-color: #3a3a3a;
+  height: 75px;
+  position: relative;
+}
+
+footer .btn_to_top {
+  position: absolute;
+  right: 0;
+  top: 40%;
+  margin-right: 25px;
+}
+
+footer .btn_to_top i {
+  font-size: 1.2rem;
+  color: #fff;
+}
+/*# sourceMappingURL=footer.css.map */

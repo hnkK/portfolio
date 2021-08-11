@@ -1,0 +1,127 @@
+.contact_section {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.contact_section .location {
+  width: auto;
+  border: 1px solid gray;
+  height: 60%;
+  color: #fff;
+  text-align: right;
+  font-variant: unset;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.contact_section .location h4 {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.contact_section .location address {
+  font-style: normal;
+  margin-bottom: 15px;
+}
+
+.contact_section .location address iframe {
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+
+.contact_section .form {
+  color: #fff;
+  width: 40%;
+  border: 1px solid gray;
+  height: 500px;
+  background-color: #3a3a3a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact_section .form .infos_contact {
+  margin: auto;
+}
+
+.contact_section .form .infos_contact hr {
+  width: 80%;
+  margin: auto;
+}
+
+.contact_section .form .infos_contact p {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.contact_section .form h4 {
+  text-align: right;
+  font-size: 2.5rem;
+  font-weight: lighter;
+  padding: 12px;
+}
+
+.contact_section .form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-right: 12px;
+}
+
+.contact_section .form form .form_field {
+  margin-bottom: 25px;
+}
+
+.contact_section .form form .form_field label {
+  position: absolute;
+}
+
+.contact_section .form form .form_field input {
+  position: relative;
+  background-color: transparent;
+  padding: 12px;
+  width: 360px;
+  color: #fff;
+}
+
+.contact_section .form form .btn_submit_form button {
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #1c1c1c;
+}
+
+.contact_section .form form .btn_submit_form a {
+  text-decoration: none;
+  color: #fff;
+}
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,135 @@
+/* Hero stylesheet */
+.hero {
+  color: #ffff;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero .hero_text {
+  margin-left: 75px;
+}
+
+.hero .hero_text h1 {
+  font-size: 5rem;
+  text-align: left;
+}
+
+.hero .hero_text h2 {
+  font-size: 2.8rem;
+}
+
+.hero .hero_text span {
+  color: red;
+}
+
+.hero .hero_text hr {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.hero .hero_text .hero_icons {
+  font-size: 3rem;
+}
+
+.hero .hero_text .hero_icons i {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero .hero_text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+.hero .computer_drawing {
+  border: 1px solid grey;
+  width: 500px;
+  height: 250px;
+}
+
+.hero .computer_drawing .screen {
+  background-color: #3a3a3a;
+  width: 450px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .computer_drawing .screen span {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+.hero .computer_drawing .stand {
+  background-color: #ffff;
+  width: 75px;
+  height: 50px;
+  margin: auto;
+}
+
+.hero .computer_drawing .keyboard {
+  width: 375px;
+  height: 80px;
+  border: 1px solid grey;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .computer_drawing .keyboard .space_bar {
+  border: 1px solid #fff;
+  height: 20px;
+  width: 120px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero .computer_drawing {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=hero.css.map */
