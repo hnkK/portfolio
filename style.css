@@ -24,9 +24,9 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 nav ul {
@@ -51,7 +51,7 @@ nav ul {
 nav ul li {
   margin: 10px;
   padding-left: 25px;
-  padding-right: 10px;
+  padding-right: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
   border: 1px solid #ffff;
@@ -66,19 +66,8 @@ nav ul li {
 }
 
 nav i {
-  display: block;
-  color: #ffff;
-  font-size: 25px;
-  margin: auto;
-  margin-right: 35px;
-  cursor: pointer;
-}
-
-@media screen and (min-width: 768px) {
-  nav i {
-    opacity: 0;
-    pointer-events: none;
-  }
+  font-size: 1.4rem;
+  padding: 15px;
 }
 
 .nav_transition_in {
@@ -97,7 +86,6 @@ nav i {
 .hero {
   color: #ffff;
   text-align: left;
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,6 +100,7 @@ nav i {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
+  width: 100%;
 }
 
 .hero .hero_text {
@@ -143,6 +132,17 @@ nav i {
 .hero .hero_text .hero_icons i {
   margin-left: 15px;
   margin-right: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero .hero_text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
 }
 
 .hero .computer_drawing {
@@ -205,9 +205,22 @@ nav i {
   margin-top: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .hero .computer_drawing {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    width: 100%;
+  }
+}
+
 /* Section About */
 .about {
   max-width: 100%;
+  height: 100vh;
   margin: auto;
 }
 
@@ -302,18 +315,20 @@ nav i {
 }
 
 .about .hobbies_icons i {
+  display: inline-block;
+  border-radius: 60px;
+  -webkit-box-shadow: 0px 0px 2px #888;
+          box-shadow: 0px 0px 2px #888;
   color: #fff;
-  font-size: 1.4rem;
-  border: 1px solid #fff;
-  border-radius: 50px;
-  padding: 20px;
+  padding: 0.5em 0.6em;
+  font-size: 2rem;
   margin-left: 15px;
   margin-right: 15px;
 }
 
 /* Section Skills */
 .skills_section {
-  margin-top: 50px;
+  height: 100vh;
 }
 
 .skills_section h3 {
@@ -321,6 +336,15 @@ nav i {
   font-weight: lighter;
   font-size: 2.6rem;
   text-align: center;
+}
+
+.skills_section h4 {
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+  font-family: MADE TOMMY;
+  font-weight: lighter;
+  font-size: 2rem;
 }
 
 .skills_section .skills_list {
@@ -335,16 +359,29 @@ nav i {
 
 .skills_section .skill {
   color: #fff;
-  padding: 12px;
+  width: 90px;
+  margin-right: 25px;
+  margin-left: 25px;
+  text-align: center;
 }
 
 .skills_section .skill i {
   font-size: 3rem;
 }
 
+.skills_section .also_skills {
+  color: #fff;
+  text-align: center;
+}
+
+.skills_section .also_skills ul li {
+  display: inline-block;
+}
+
 /* Section Contact */
 .contact_section {
   width: 100%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,14 +396,15 @@ nav i {
 }
 
 .contact_section .location {
-  width: 40%;
+  width: auto;
   border: 1px solid gray;
-  height: 100%;
+  height: 60%;
   color: #fff;
   text-align: right;
   font-variant: unset;
   padding-top: 20px;
-  padding-right: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .contact_section .location h4 {
@@ -376,6 +414,12 @@ nav i {
 
 .contact_section .location address {
   font-style: normal;
+  margin-bottom: 15px;
+}
+
+.contact_section .location address iframe {
+  margin-top: 15px;
+  padding-bottom: 15px;
 }
 
 .contact_section .form {
@@ -393,6 +437,23 @@ nav i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.contact_section .form .infos_contact {
+  margin: auto;
+}
+
+.contact_section .form .infos_contact hr {
+  width: 80%;
+  margin: auto;
+}
+
+.contact_section .form .infos_contact p {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .contact_section .form h4 {
@@ -429,6 +490,37 @@ nav i {
   background-color: transparent;
   padding: 12px;
   width: 360px;
+  color: #fff;
+}
+
+.contact_section .form form .btn_submit_form button {
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #1c1c1c;
+}
+
+.contact_section .form form .btn_submit_form a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer {
+  background-color: #3a3a3a;
+  height: 75px;
+  position: relative;
+}
+
+footer .btn_to_top {
+  position: absolute;
+  right: 0;
+  top: 40%;
+  margin-right: 25px;
+}
+
+footer .btn_to_top i {
+  font-size: 1.2rem;
   color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

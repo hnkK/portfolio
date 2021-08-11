@@ -23,7 +23,7 @@ nav {
   height: 75px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   ul {
     list-style-type: none;
     display: flex;
@@ -37,7 +37,7 @@ nav {
     li {
       margin: 10px;
       padding-left: 25px;
-      padding-right: 10px;
+      padding-right: 25px;
       padding-top: 10px;
       padding-bottom: 10px;
       border: 1px solid #ffff;
@@ -49,16 +49,8 @@ nav {
     }
   }
   i {
-    display: block;
-    color: #ffff;
-    font-size: 25px;
-    margin: auto;
-    margin-right: 35px;
-    cursor: pointer;
-    @media screen and (min-width: 768px) {
-      opacity: 0;
-      pointer-events: none;
-    }
+      font-size: 1.4rem;
+      padding: 15px;
   }
 }
 
@@ -78,12 +70,12 @@ nav {
 .hero {
   color: #ffff;
   text-align: left;
-  text-align: center;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  width: 100%;
 
   .hero_text {
     margin-left: 75px;
@@ -110,6 +102,11 @@ nav {
         margin-left: 15px;
         margin-right: 15px;
       }
+    }
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
     }
   }
 
@@ -156,13 +153,22 @@ nav {
         margin-top: 30px;
       }
     }
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
   }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+}
 }
 
 /* Section About */
 
 .about {
   max-width: 100%;
+  height: 100vh;
   margin: auto;
 
   .container_about {
@@ -245,11 +251,12 @@ nav {
     text-align: center;
     padding: 15px;
     i {
+      display: inline-block;
+      border-radius: 60px;
+      box-shadow: 0px 0px 2px #888;
       color: #fff;
-      font-size: 1.4rem;
-      border: 1px solid #fff;
-      border-radius: 50px;
-      padding: 20px;
+      padding: 0.5em 0.6em;
+      font-size: 2rem;
       margin-left: 15px;
       margin-right: 15px;
     }
@@ -259,12 +266,21 @@ nav {
 /* Section Skills */
 
 .skills_section {
-  margin-top: 50px;
+  height: 100vh;
   h3 {
     color: #fff;
     font-weight: lighter;
     font-size: 2.6rem;
     text-align: center;
+  }
+
+  h4 {
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    font-family: MADE TOMMY;
+    font-weight: lighter;
+    font-size: 2rem;
   }
 
   .skills_list {
@@ -275,9 +291,22 @@ nav {
 
   .skill {
     color: #fff;
-    padding: 12px;
+    width: 90px;
+    margin-right: 25px;
+    margin-left: 25px;
+    text-align: center;
     i {
       font-size: 3rem;
+    }
+  }
+
+  .also_skills {
+    color: #fff;
+    text-align: center;
+    ul {
+      li {
+        display: inline-block;
+      }
     }
   }
 }
@@ -286,26 +315,33 @@ nav {
 
 .contact_section {
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: auto;
 
   .location {
-    width: 40%;
+    width: auto;
     border: 1px solid gray;
-    height: 100%;
+    height: 60%;
     color: #fff;
     text-align: right;
     font-variant: unset;
     padding-top: 20px;
-    padding-right: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
     h4 {
       font-size: 2rem;
       font-weight: lighter;
     }
     address {
       font-style: normal;
+      margin-bottom: 15px;
+      iframe {
+          margin-top: 15px;
+          padding-bottom: 15px;
+      }
     }
   }
 
@@ -318,6 +354,22 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .infos_contact {
+        margin: auto;
+        hr {
+            width: 80%;
+            margin: auto;
+        }
+        p {
+            width: 80%;
+            text-align: center;
+            margin: auto;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+    }
+
     h4 {
       text-align: right;
       font-size: 2.5rem;
@@ -331,7 +383,7 @@ nav {
       padding-right: 12px;
 
       .form_field {
-          margin-bottom: 25px;
+        margin-bottom: 25px;
         label {
           position: absolute;
         }
@@ -343,6 +395,37 @@ nav {
           color: #fff;
         }
       }
+
+      .btn_submit_form {
+          button {
+              padding-right: 30px;
+              padding-left: 30px;
+              padding-top: 12px;
+              padding-bottom: 12px;
+              background-color: #1c1c1c;
+          }
+          a {
+            text-decoration: none;
+            color: #fff;
+          }
+
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #3a3a3a;
+  height: 75px;
+  position: relative;
+  .btn_to_top {
+    position: absolute;
+    right: 0;
+    top: 40%;
+    margin-right: 25px;
+    i {
+      font-size: 1.2rem;
+      color: #fff;
     }
   }
 }
