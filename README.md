@@ -7,5 +7,5 @@ Personnal Portfolio with a minimalistic design based theme.
   <li>Make dynamic draws and animate them in pure CSS</li>
   <li>Fully Responsive</li>
   <li>Dark and Light switch theme</li>
-  <li>Make HTML and CSS files the most lite possible/li>
+  <li>Make HTML and CSS files the most lite possible</li>
 </ul>
