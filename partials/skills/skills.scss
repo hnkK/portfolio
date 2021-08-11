@@ -1,25 +1,51 @@
 .skills_section {
     height: 100vh;
+    width: 80%;
+    margin: auto;
+
     h3 {
-      color: #fff;
+      color: #8BC34A;
       font-weight: lighter;
-      font-size: 2.6rem;
-      text-align: center;
+      font-size: 4rem;
+      text-align: left;
+      width: 80%;
+      margin: auto;
     }
   
     h4 {
-      color: #fff;
+      color: #FFC107;
       text-align: center;
       margin-top: 50px;
       font-family: MADE TOMMY;
-      font-weight: lighter;
-      font-size: 2rem;
+      font-weight: 100;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    hr {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+    }
+
+    .skills_text {
+      color: #fff;
+      font-weight: 100;
+      text-align: center;
+      padding-top: 50px;
+      width: 50%;
+      margin: auto;
+      line-height: 1.5rem;
     }
   
     .skills_list {
       margin-top: 50px;
       display: flex;
       justify-content: center;
+      p {
+        margin-top: 10px;
+      }
     }
   
     .skill {

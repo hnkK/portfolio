@@ -16,12 +16,15 @@
       h1 {
         font-size: 5rem;
         text-align: left;
+        font-weight: 400;
       }
       h2 {
         font-size: 2.8rem;
-      }
-      span {
-        color: red;
+        font-weight: 100;
+        span {
+          color: #B71C1C;
+          font-weight: 500;
+        }
       }
   
       hr {
@@ -30,10 +33,17 @@
       }
   
       .hero_icons {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        position: relative;
         i {
           margin-left: 15px;
           margin-right: 15px;
+        }
+        hr {
+          width: 80px;
+          transform: rotate(90deg);
+          position: absolute;
+          left: -45px;
         }
       }
       @media screen and (max-width: 768px) {
