@@ -12,12 +12,23 @@
 
     <nav id="navbar">
         <ul>
-            <li><button class="fill">A propos</button></li>
+            <li><button class="fill">Qui suis-je</button></li>
             <li><button class="fill">Mes compétences</button></li>
             <li><button class="fill">Me contacter</button></li>
             <i class="fas fa-sun"></i>
         </ul>
+        <div class="burger_menu" onclick="hide()">
+            <i class="fas fa-bars"><a href="#"></a></i>
+        </div>
     </nav>
+
+    <div id="side_menu" class="side_menu">
+        <ul>
+            <li>Qui suis-je</li>
+            <li>Mes compétences</li>
+            <li>Me contacter</li>
+        </ul>
+    </div>
 
     <section class="hero">   
         <div class="hero_text">
@@ -71,7 +82,7 @@
             <div class="hobbies_icons">
                 <i class="fas fa-guitar"></i>
                 <i class="fas fa-headphones-alt"></i>
-                <i class="fas fa-gamepad"></i>
+                <i class="fas fa-dice-three"></i>
                 <i class="fas fa-car-alt"></i>
             </div>
         </div>
@@ -80,7 +91,7 @@
 
 
     <section class="skills_section">
-        <h3>Mes compétences</h3>
+        <h2>Mes compétences</h2>
         <hr>
         <p class="skills_text">Site vitrine, Wordpress, Application Web & Mobile, je vous réalise le design de vos projets et les intègre à l'aide
             des dernières technologies en vogue. Bien que le développement côté client soit ma spécialité, je peux également concevoir seveurs, base de données
@@ -129,48 +140,23 @@
     </section>
 
     <section class="contact_section">
-        <div class="location">
-            <h4>Ou me trouver ?</h4>
-            <address>
-                Avenue de Beaufays <br />
-                9A 4130 - Esneux ( Liège )
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2534.2728515305694!2d5.5825209158992415!3d50.566291186891966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f7ecd3aaefcd%3A0xb6551ff0291bedc9!2sAv.%20de%20Beaufays%209a%2C%204130%20Esneux!5e0!3m2!1sfr!2sbe!4v1628673939987!5m2!1sfr!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </address>
+        <div>        
+            <h2>Me contacter</h2>
+            <hr>
         </div>
-        <div class="form">
-            <div class="infos_contact">
-                <hr />
-                <p><i class="fas fa-mobile-alt"></i>0 489 20 72 61</p>
-                <p><i class="fas fa-at"></i></i>henkeskevin@gmail.com</p>
-                <p><i class="fab fa-linkedin-in"></i>https://www.linkedin.com/in/kevin-henkes/</p>
-                <hr />
-            </div>
-            <form action="">
-                <div class="form_field">
-                    <label for="">Nom</label>
-                    <input type="text">
-                </div>
-                <div class="form_field">
-                    <label for="">Prénom</label>
-                    <input type="text">
-                </div>
-                <div class="form_field">
-                    <label for="">E-mail</label>
-                    <input type="text">
-                </div>
-                <div class="form_field">
-                    <label for="">Message</label>
-                    <input type="text" style="height: 100px;">
-                </div>
-                <div class="btn_submit_form">
-                    <button>                    
-                        <a href="#">Envoyer</a>
-                    </button>
-                </div>
-            </form>
+
+        <div class="contact_infos">
+            <p>Téléphone : 0489 20 72 61</p>
+            <address>Avenue de Beaufays 9a - 4130 Tilff ( Liège )</address>
+            <p>henkeskevin@gmail.com</p>
         </div>
+
+    <form id="form">
+        <input id="name" type="text" placeholder="NOM">
+        <input id="email" type="text" placeholder="E-MAIL">
+        <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+        <input id="submit" type="submit" value="ENVOYER">
+  </form>
     </section>
 
     <footer>

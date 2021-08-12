@@ -11,10 +11,15 @@
 html {
   background-color: #1c1c1c;
   font-family: MADE TOMMY;
+
+  //--res: calc(0.01 * 10vmin);
 }
 
 // Navbar CSS 
 @import url('./partials/navbar/navbar.css');
+
+// Navbar CSS 
+@import url('./partials/side_menu/side_menu.css');
 
 // Hero Section CSS
 @import url('./partials/hero/hero.css');

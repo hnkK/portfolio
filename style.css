@@ -1,5 +1,6 @@
 /* 06-08-2021 - Portfolio CSS */
 @import url("./partials/navbar/navbar.css");
+@import url("./partials/side_menu/side_menu.css");
 @import url("./partials/hero/hero.css");
 @import url("./partials/about/about.css");
 @import url("./partials/skills/skills.css");
