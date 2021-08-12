@@ -1,4 +1,7 @@
 const navbar = document.querySelector("#navbar");
+const sideMenu = document.querySelector("#side_menu");
+
+console.log(sideMenu);
 
 window.addEventListener('scroll', () => {
 
@@ -12,6 +15,9 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove("nav_transition_in");
         navbar.classList.add("nav_transition_out")
     }
-
-
 })
+
+function hide() {
+    sideMenu.classList.add("hide")
+    console.log("xd")
+}
