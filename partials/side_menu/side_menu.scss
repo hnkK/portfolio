@@ -1,0 +1,23 @@
+.side_menu {
+    position: fixed;
+    overflow: hidden;
+    overscroll-behavior: contain;
+    background-color: rgba(255,255,255,0.8);
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    display: none;
+
+    ul {
+        padding: 25px;
+        list-style-type: none;
+        li {
+            margin-top: 15px;
+            padding-bottom: 15px;
+        }
+    }
+}
+
+.hide {
+    display: block;
+}
