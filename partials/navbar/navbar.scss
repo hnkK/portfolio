@@ -64,17 +64,32 @@ nav {
               top: 0;
             }
         }
-      }
-      @media screen and (max-width: 768px) {
-        opacity: 0;
-        pointer-events: none;
+        @media screen and (max-width: 1024px) {
+          display: none;
       }
     }
-    i {
+
+      i {
         font-size: 1.4rem;
-        padding: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-left: 65px;
         color: #383736;
+      }
     }
+
+    .burger_menu {
+      padding: auto;
+      margin: auto;
+      margin-right: 75px;
+      display: none;
+      font-size: 1.7rem;
+      cursor: pointer;
+      @media screen and (max-width: 1024px) {
+        display: block;
+      }
+    }
+
   }
   
   .nav_transition_in {
