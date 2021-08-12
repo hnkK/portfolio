@@ -1,0 +1,60 @@
+.light_theme {
+  transition: 0.5s all ease-in-out;
+  background-color: #eeeeee;
+
+  nav {
+    background-color: #1c1c1c;
+  }
+
+  .hero {
+    color: #1c1c1c;
+  }
+
+  .squares_about {
+    div {
+      border-color: #1c1c1c;
+    }
+  }
+
+  .text_about {
+    p {
+      color: #1c1c1c;
+    }
+
+    .btn_about {
+      a {
+        color: #1c1c1c;
+      }
+    }
+  }
+
+  .hobbies {
+    h3 {
+      color: #1c1c1c;
+    }
+    i {
+      color: #1c1c1c;
+    }
+  }
+
+  .skills_text {
+    color: #1c1c1c;
+  }
+
+  .skill {
+    i {
+      color: #1c1c1c;
+    }
+    p {
+      color: #1c1c1c;
+    }
+  }
+
+  .also_skills {
+    color: #1c1c1c;
+  }
+
+  .contact_infos {
+    color: #1c1c1c;
+  }
+}
