@@ -1,88 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
 .contact_section {
-  width: 100%;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: auto;
-}
-
-.contact_section .location {
-  width: auto;
-  border: 1px solid gray;
-  height: 60%;
-  color: #fff;
-  text-align: right;
-  font-variant: unset;
-  padding-top: 20px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-.contact_section .location h4 {
-  font-size: 2rem;
-  font-weight: lighter;
-}
-
-.contact_section .location address {
-  font-style: normal;
-  margin-bottom: 15px;
-}
-
-.contact_section .location address iframe {
-  margin-top: 15px;
-  padding-bottom: 15px;
-}
-
-.contact_section .form {
-  color: #fff;
-  width: 40%;
-  border: 1px solid gray;
-  height: 500px;
-  background-color: #3a3a3a;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contact_section .form .infos_contact {
-  margin: auto;
-}
-
-.contact_section .form .infos_contact hr {
-  width: 80%;
-  margin: auto;
-}
-
-.contact_section .form .infos_contact p {
-  width: 80%;
-  text-align: center;
-  margin: auto;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-.contact_section .form h4 {
-  text-align: right;
-  font-size: 2.5rem;
-  font-weight: lighter;
-  padding: 12px;
-}
-
-.contact_section .form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,38 +9,227 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-right: 12px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  /* on hover placeholder */
 }
 
-.contact_section .form form .form_field {
-  margin-bottom: 25px;
+.contact_section h2 {
+  color: #0044ff;
+  font-weight: lighter;
+  font-size: clamp(2rem, 5vw, 4rem);
+  text-align: center;
+  width: 80%;
+  margin: auto;
 }
 
-.contact_section .form form .form_field label {
-  position: absolute;
+.contact_section hr {
+  width: 40%;
+  text-align: right;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
 }
 
-.contact_section .form form .form_field input {
-  position: relative;
-  background-color: transparent;
-  padding: 12px;
-  width: 360px;
+.contact_section .contact_infos {
+  text-align: center;
   color: #fff;
+  margin-top: 15px;
 }
 
-.contact_section .form form .btn_submit_form button {
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: #1c1c1c;
+.contact_section input::-webkit-input-placeholder, .contact_section textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
 }
 
-.contact_section .form form .btn_submit_form a {
-  text-decoration: none;
-  color: #fff;
+.contact_section input:focus::-webkit-input-placeholder, .contact_section textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+.contact_section input::-webkit-input-placeholder, .contact_section textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+.contact_section input:-ms-input-placeholder, .contact_section textarea:-ms-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+.contact_section input::-ms-input-placeholder, .contact_section textarea::-ms-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+.contact_section input::placeholder, .contact_section textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+.contact_section input:focus::-webkit-input-placeholder, .contact_section textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+.contact_section input:focus:-ms-input-placeholder, .contact_section textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+.contact_section input:focus::-ms-input-placeholder, .contact_section textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+.contact_section input:focus::placeholder, .contact_section textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+.contact_section input::-ms-placeholder, .contact_section textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+.contact_section input:focus::-ms-placeholder, .contact_section textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+.contact_section input:hover::-webkit-input-placeholder, .contact_section textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+.contact_section input:hover:focus::-webkit-input-placeholder, .contact_section textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+.contact_section input:hover::-webkit-input-placeholder, .contact_section textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+.contact_section input:hover:-ms-input-placeholder, .contact_section textarea:hover:-ms-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+.contact_section input:hover::-ms-input-placeholder, .contact_section textarea:hover::-ms-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+.contact_section input:hover::placeholder, .contact_section textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+.contact_section input:hover:focus::-webkit-input-placeholder, .contact_section textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+.contact_section input:hover:focus:-ms-input-placeholder, .contact_section textarea:hover:focus:-ms-input-placeholder {
+  color: #cbc6c1;
+}
+
+.contact_section input:hover:focus::-ms-input-placeholder, .contact_section textarea:hover:focus::-ms-input-placeholder {
+  color: #cbc6c1;
+}
+
+.contact_section input:hover:focus::placeholder, .contact_section textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+.contact_section input:hover::-webkit-input-placeholder, .contact_section textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+.contact_section input:hover:-ms-input-placeholder, .contact_section textarea:hover:-ms-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+.contact_section input:hover::-ms-input-placeholder, .contact_section textarea:hover::-ms-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+.contact_section input:hover::placeholder, .contact_section textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+.contact_section input:hover:focus::-ms-placeholder, .contact_section textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+
+.contact_section #form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.contact_section input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 500px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+.contact_section input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+.contact_section textarea {
+  width: 500px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  border: solid 1px #b3aca7;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+.contact_section textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+.contact_section #submit {
+  width: 500px;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+  outline: none;
+  cursor: pointer;
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+.contact_section #submit:hover {
+  color: #e2dedb;
 }
 /*# sourceMappingURL=contact.css.map */

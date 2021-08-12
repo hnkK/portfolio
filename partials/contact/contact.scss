@@ -1,100 +1,188 @@
 .contact_section {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  
+  h2 {
+    color: #0044ff;
+    font-weight: lighter;
+    font-size: clamp(2rem, 5vw, 4rem);
+    text-align: center;
+    width: 80%;
     margin: auto;
+  }
+
+  hr {
+    width: 40%;
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+  }
+
+  .contact_infos {
+    text-align: center;
+    color: #fff;
+    margin-top: 15px;
+  }
+
+
+  @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+  }
   
-    .location {
-      width: auto;
-      border: 1px solid gray;
-      height: 60%;
-      color: #fff;
-      text-align: right;
-      font-variant: unset;
-      padding-top: 20px;
-      padding-right: 10px;
-      padding-left: 10px;
-      h4 {
-        font-size: 2rem;
-        font-weight: lighter;
-      }
-      address {
-        font-style: normal;
-        margin-bottom: 15px;
-        iframe {
-            margin-top: 15px;
-            padding-bottom: 15px;
-        }
-      }
-    }
+  input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+    color: #bbb5af;
+  }
   
-    .form {
-      color: #fff;
-      width: 40%;
-      border: 1px solid gray;
-      height: 500px;
-      background-color: #3a3a3a;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+  }
   
-      .infos_contact {
-          margin: auto;
-          hr {
-              width: 80%;
-              margin: auto;
-          }
-          p {
-              width: 80%;
-              text-align: center;
-              margin: auto;
-              padding-top: 25px;
-              padding-bottom: 25px;
-          }
-      }
+  input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+    color: #bbb5af;
+  }
   
-      h4 {
-        text-align: right;
-        font-size: 2.5rem;
-        font-weight: lighter;
-        padding: 12px;
-      }
-      form {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding-right: 12px;
+  input::placeholder, textarea::placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+  }
   
-        .form_field {
-          margin-bottom: 25px;
-          label {
-            position: absolute;
-          }
-          input {
-            position: relative;
-            background-color: transparent;
-            padding: 12px;
-            width: 360px;
-            color: #fff;
-          }
-        }
+  input:focus::placeholder, textarea::focus:placeholder {
+    color: #bbb5af;
+  }
   
-        .btn_submit_form {
-            button {
-                padding-right: 30px;
-                padding-left: 30px;
-                padding-top: 12px;
-                padding-bottom: 12px;
-                background-color: #1c1c1c;
-            }
-            a {
-              text-decoration: none;
-              color: #fff;
-            }
+  input::-ms-placeholder, textarea::-ms-placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+  }
   
-        }
-      }
-    }
+  input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+    color: #bbb5af;
+  }
+  
+  /* on hover placeholder */
+  
+  input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+  }
+  
+  input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+    color: #cbc6c1;
+  }
+  
+  input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+  }
+  
+  input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+    color: #cbc6c1;
+  }
+  
+  input:hover::placeholder, textarea:hover::placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+  }
+  
+  input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+    color: #cbc6c1;
+  }
+  
+  input:hover::placeholder, textarea:hover::placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+  }
+  
+  input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+    color: #cbc6c1;
+  }
+  
+  
+  #form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+  }
+  
+  input {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    width: 500px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    
+    background: transparent;
+    outline: none;
+    color: #726659;
+    
+    border: solid 1px #b3aca7;
+    border-bottom: none;
+    
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+  }
+  
+  input:hover {
+    background: #b3aca7;
+    color: #e2dedb;
+  }
+  
+  textarea {
+    width: 500px;
+    height: 110px;
+    max-height: 110px;
+    padding: 15px;
+    
+    background: transparent;
+    outline: none;
+    
+    color: #726659;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    
+    border: solid 1px #b3aca7;
+    
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+  }
+  
+  textarea:hover {
+    background: #b3aca7;
+    color: #e2dedb;
+  }
+  
+  #submit {
+    width: 500px;
+    
+    padding: 0;   
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    color: #b3aca7;
+    
+    outline:none;
+    cursor: pointer;
+    
+    border: solid 1px #b3aca7;
+    border-top: none;
+  }
+  
+  #submit:hover {
+    color: #e2dedb;
+  }
   }
