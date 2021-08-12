@@ -1,4 +1,5 @@
 /* Hero stylesheet */
+@import url("./title_animation/title_animation.css");
 .hero {
   color: #ffff;
   text-align: left;
@@ -35,7 +36,7 @@
 }
 
 .hero .hero_text h2 span {
-  color: #B71C1C;
+  color: #b71c1c;
   font-weight: 500;
 }
 

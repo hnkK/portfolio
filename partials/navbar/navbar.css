@@ -1,4 +1,5 @@
 /* Navbar stylesheet */
+@import url("./button_nav/button_nav.css");
 nav {
   position: fixed;
   background-color: #fff;
@@ -36,48 +37,9 @@ nav ul {
   margin-left: 35px;
 }
 
-nav ul li button {
-  position: relative;
-  height: 45px;
-  width: 150px;
-  margin: 10px 7px;
-  padding: 5px 5px;
-  font-weight: 500;
-  font-size: 12px;
-  letter-spacing: 1px;
-  color: #383736;
-  border: 1px #383736 solid;
-  text-transform: uppercase;
-  outline: 0;
-  overflow: hidden;
-  background: none;
-  z-index: 1;
-  cursor: pointer;
-  transition: 0.08s ease-in;
-  -o-transition: 0.08s ease-in;
-  -ms-transition: 0.08s ease-in;
-  -moz-transition: 0.08s ease-in;
-  -webkit-transition: 0.08s ease-in;
-}
-
-nav ul li button .fill:hover {
-  color: whitesmoke;
-}
-
-nav ul li button .fill:before {
-  content: "";
-  position: absolute;
-  background: #383736;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 100%;
-  z-index: -1;
-  -webkit-transition: top 0.09s ease-in;
-}
-
-nav ul li button .fill:hover:before {
-  top: 0;
+nav ul li a {
+  color: inherit;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1024px) {
@@ -92,6 +54,10 @@ nav ul i {
   padding-bottom: 15px;
   margin-left: 65px;
   color: #383736;
+}
+
+nav ul i:hover {
+  cursor: pointer;
 }
 
 nav .burger_menu {

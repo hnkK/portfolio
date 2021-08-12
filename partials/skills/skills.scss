@@ -1,89 +1,102 @@
 .skills_section {
-    height: 100vh;
-    max-width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  width: 80%;
+  margin: auto;
+
+  h2 {
+    color: #8bc34a;
+    font-weight: lighter;
+    font-size: clamp(2rem, 5vw, 4rem);
+    text-align: left;
     width: 80%;
     margin: auto;
+  }
 
-    h2 {
-      color: #8BC34A;
-      font-weight: lighter;
-      font-size: clamp(2rem, 5vw, 4rem);
-      text-align: left;
-      width: 80%;
+  h4 {
+    color: #ffc107;
+    text-align: center;
+    margin-top: 50px;
+    font-family: MADE TOMMY;
+    font-weight: 100;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  hr {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+  }
+
+  .skills_text {
+    color: #fff;
+    font-weight: 100;
+    text-align: justify;
+    text-align-last: center;
+    padding-top: 50px;
+    width: 50%;
+    margin: auto;
+    line-height: 1.7rem;
+    font-family: "Noto Sans JP", sans-serif;
+    @media screen and (max-width: 576px) {
+      padding-right: 0;
+      width: 100%;
+      line-height: 1.7rem;
+      text-align: justify;
+    }
+  }
+
+  .skills_list {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: center;
+    p {
+      margin-top: 10px;
+    }
+    @media screen and (max-width: 576px) {
       margin: auto;
+      flex-wrap: wrap;
+      margin-top: 65px;
     }
-  
-    h4 {
-      color: #FFC107;
-      text-align: center;
-      margin-top: 50px;
-      font-family: MADE TOMMY;
-      font-weight: 100;
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-    }
+  }
 
-    hr {
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 15px;
+  .skill {
+    color: #fff;
+    width: 90px;
+    margin-right: 25px;
+    margin-left: 25px;
+    text-align: center;
+    i {
+      font-size: 3rem;
+      @media screen and (max-width: 576px) {
+        font-size: 2.5rem;
+      }
     }
+    @media screen and (max-width: 576px) {
+      margin-bottom: 35px;
+    }
+  }
 
-    .skills_text {
-      color: #fff;
-      font-weight: 100;
-      text-align: center;
-      padding-top: 50px;
-      width: 50%;
-      margin: auto;
-      line-height: 1.5rem;
-      @media screen and (max-width: 576px) {
-        padding-right: 0;
-        width: 100%;
-        line-height: 1.7rem;
-        text-align: justify;
-      }
-    }
-  
-    .skills_list {
-      margin-top: 50px;
-      display: flex;
-      justify-content: center;
-      p {
-        margin-top: 10px;
-      }
-      @media screen and (max-width: 576px) {
-        margin: auto;
-        flex-wrap: wrap;
-        margin-top: 65px;
-      }
-    }
-  
-    .skill {
-      color: #fff;
-      width: 90px;
-      margin-right: 25px;
-      margin-left: 25px;
-      text-align: center;
-      i {
-        font-size: 3rem;
-        @media screen and (max-width: 576px) {
-          font-size: 2.5rem;
-        }
-      }
-      @media screen and (max-width: 576px) {
-        margin-bottom: 35px;
-      }
-    }
-  
-    .also_skills {
-      color: #fff;
-      text-align: center;
-      ul {
-        li {
-          display: inline-block;
-        }
+  .skill:hover {
+    color: #b71c1c;
+    transition: 0.1s ease all;
+  }
+
+  .also_skills {
+    color: #fff;
+    text-align: center;
+    font-weight: 200;
+    width: 35%;
+    margin: auto;
+    text-align: center;
+    ul {
+      li {
+        display: inline-block;
+        padding: 5px;
       }
     }
   }
+}
