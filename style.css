@@ -1,4 +1,5 @@
 /* 06-08-2021 - Portfolio CSS */
+@import url("./partials/utilities/utilities.css");
 @import url("./partials/navbar/navbar.css");
 @import url("./partials/side_menu/side_menu.css");
 @import url("./partials/hero/hero.css");
@@ -6,6 +7,7 @@
 @import url("./partials/skills/skills.css");
 @import url("./partials/contact/contact.css");
 @import url("./partials/footer/footer.css");
+@import url("./partials/light_mode/light_mode.css");
 * {
   padding: 0;
   margin: 0;
@@ -14,7 +16,11 @@
 }
 
 html {
-  background-color: #1c1c1c;
   font-family: MADE TOMMY;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1c1c1c;
 }
 /*# sourceMappingURL=style.css.map */

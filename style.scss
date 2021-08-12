@@ -9,11 +9,18 @@
 }
 
 html {
-  background-color: #1c1c1c;
   font-family: MADE TOMMY;
-
+  scroll-behavior: smooth;
   //--res: calc(0.01 * 10vmin);
 }
+
+body {
+  background-color: #1c1c1c;
+}
+
+
+// Navbar CSS 
+@import url('./partials/utilities/utilities.css');
 
 // Navbar CSS 
 @import url('./partials/navbar/navbar.css');
@@ -35,5 +42,8 @@ html {
 
 // Footer
 @import url('./partials/footer/footer.css');
+
+// Light Theme CSS
+@import url('./partials/light_mode/light_mode.css');
 
 

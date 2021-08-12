@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f57d76244d.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="light_theme">
 
     <nav id="navbar">
         <ul>
-            <li><button class="fill">Qui suis-je</button></li>
-            <li><button class="fill">Mes compétences</button></li>
-            <li><button class="fill">Me contacter</button></li>
-            <i class="fas fa-sun"></i>
+            <li><button class="btn_nav fill"><a href="#about">Qui suis-je</a></button></li>
+            <li><button class="btn_nav fill"><a href="#skills">Mes compétences</a></button></li>
+            <li><button class="btn_nav fill"><a href="#contact">Me contacter</a></button></li>
+            <i class="fas fa-sun" onclick="switchTheme()"></i>
         </ul>
         <div class="burger_menu" onclick="hide()">
             <i class="fas fa-bars"><a href="#"></a></i>
@@ -31,12 +31,16 @@
     </div>
 
     <section class="hero">   
-        <div class="hero_text">
+        <div class="hero_text animated_title">
             <hr>
-            <h1>Henkes Kevin</h1>
-            <h2>Développeur <span>FRONT-END</span></h2>
+            <div class="text-top">
+                <div >
+                    <span><h1>Henkes Kevin</h1></span>
+                    <span><h2>Développeur <span>FRONT-END</span></h2></span>
+                </div>
+            </div>
             <hr>
-            <div class="hero_icons">
+            <div class="hero_icons text-bottom">
                 <hr />
                 <i></i>
                 <i class="fab fa-linkedin"></i>
@@ -59,7 +63,7 @@
 
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
 
         <div class="container_about">
             <div class="squares_about">
@@ -69,9 +73,20 @@
             <div class="text_about">
                 <h2>A propos</h2>
                 <hr />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, at corporis repellat doloribus, eius voluptate, nobis id maiores magni facilis maxime reprehenderit cumque quaerat quae consequuntur neque ea porro alias ipsam suscipit sint et adipisci?</p>
-                <button class="btn_about">
-                    <a href="http://">Télécharger mon CV</a>
+                <p>Tout d'abord, merci de votre visite sur mon site ! &#128515;</p>
+                <p>Je m'appelle Kévin, 27 ans et encore toutes ses dents (mais plus tous ses cheveux), 
+                    diplômé en tant que Web designer, je me suis principalement spécialisé dans le développement
+                    Web côté Front jusqu'à aujourd'hui.
+                </p>
+                <p>Durant mon temps libre, je pratique de la guitare electrique, avec une grosse affinité pour le
+                    Blues / Hard rock (Jeff Healey, Iron Maiden, Slash, pour en citer quelque uns &#9994;)
+                </p>
+                <p>Si vous souhaitez avoir un aperçu plus complet de mon parcours, je vous invite à jeter un coup d'oeil
+                    à mon CV ! 	
+                    &#128071;
+                </p>
+                <button class="btn_about btn_nav fill">
+                    <a href="#">Télécharger mon CV</a>
                 </button>
             </div>
         </div>
@@ -90,7 +105,7 @@
     </section>
 
 
-    <section class="skills_section">
+    <section id="skills" class="skills_section">
         <h2>Mes compétences</h2>
         <hr>
         <p class="skills_text">Site vitrine, Wordpress, Application Web & Mobile, je vous réalise le design de vos projets et les intègre à l'aide
@@ -131,32 +146,43 @@
                     <span>&bull;</span>
                     <li>Node js</li>
                     <span>&bull;</span>
-                    <li>Express</li>
+                    <li>SQL / MS SQL Server</li>
                     <span>&bull;</span>
-                    <li>Node js</li>
+                    <li>Xamarin</li>
+                    <span>&bull;</span>
+                    <li>WPF</li>
+                    <span>&bull;</span>
+                    <li>WCF</li>
+                    <span>&bull;</span>
+                    <li>Ado & Linq</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <section class="contact_section">
+    <section id="contact" class="contact_section">
         <div>        
             <h2>Me contacter</h2>
             <hr>
         </div>
 
         <div class="contact_infos">
-            <p>Téléphone : 0489 20 72 61</p>
-            <address>Avenue de Beaufays 9a - 4130 Tilff ( Liège )</address>
-            <p>henkeskevin@gmail.com</p>
+            <h3>Mes informations pour me joindre</h3>
+            <address>
+                <p>Téléphone : 0489 20 72 61</p>
+                <p>Avenue de Beaufays 9a - 4130 Tilff ( Liège )</p>
+                <a href="mailto:henkeskevin@gmail.com">henkeskevin@gmail.com</a>
+            </address>
         </div>
 
-    <form id="form">
-        <input id="name" type="text" placeholder="NOM">
-        <input id="email" type="text" placeholder="E-MAIL">
-        <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
-        <input id="submit" type="submit" value="ENVOYER">
-  </form>
+        <hr>
+
+        <form id="form">
+            <input id="name" type="text" placeholder="NOM">
+            <input id="email" type="text" placeholder="E-MAIL">
+            <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+            <input id="submit" type="submit" value="ENVOYER">
+        </form>
     </section>
 
     <footer>
