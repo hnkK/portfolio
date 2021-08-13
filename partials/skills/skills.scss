@@ -1,8 +1,15 @@
 .skills_section {
-  height: 100vh;
+  height: 100%;
   max-width: 100%;
   width: 80%;
   margin: auto;
+  padding-bottom: 300px;
+
+  @media screen and (max-width: 768px) {
+    position: relative;
+    height: 1200px;
+    margin-top: 300px;
+  }
 
   h2 {
     color: #8bc34a;
@@ -11,6 +18,9 @@
     text-align: left;
     width: 80%;
     margin: auto;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
 
   h4 {
@@ -28,6 +38,9 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
 
   .skills_text {
@@ -40,11 +53,14 @@
     margin: auto;
     line-height: 1.7rem;
     font-family: "Noto Sans JP", sans-serif;
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 768px) {
       padding-right: 0;
       width: 100%;
-      line-height: 1.7rem;
+      line-height: 2.1rem;
       text-align: justify;
+    }
+    @media screen and (max-width: 1280px) {
+      width: 80%;
     }
   }
 
@@ -56,7 +72,7 @@
     p {
       margin-top: 10px;
     }
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 768px) {
       margin: auto;
       flex-wrap: wrap;
       margin-top: 65px;
@@ -71,6 +87,7 @@
     text-align: center;
     i {
       font-size: 3rem;
+      
       @media screen and (max-width: 576px) {
         font-size: 2.5rem;
       }
@@ -97,6 +114,9 @@
         display: inline-block;
         padding: 5px;
       }
+    }
+    @media screen and (max-width: 1444px) {
+      width: 100%;
     }
   }
 }

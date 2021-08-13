@@ -1,8 +1,17 @@
 .skills_section {
-  height: 100vh;
+  height: 100%;
   max-width: 100%;
   width: 80%;
   margin: auto;
+  padding-bottom: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  .skills_section {
+    position: relative;
+    height: 1200px;
+    margin-top: 300px;
+  }
 }
 
 .skills_section h2 {
@@ -12,6 +21,12 @@
   text-align: left;
   width: 80%;
   margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .skills_section h2 {
+    width: 100%;
+  }
 }
 
 .skills_section h4 {
@@ -31,6 +46,12 @@
   margin-top: 15px;
 }
 
+@media screen and (max-width: 768px) {
+  .skills_section hr {
+    width: 100%;
+  }
+}
+
 .skills_section .skills_text {
   color: #fff;
   font-weight: 100;
@@ -43,12 +64,18 @@
   font-family: "Noto Sans JP", sans-serif;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .skills_section .skills_text {
     padding-right: 0;
     width: 100%;
-    line-height: 1.7rem;
+    line-height: 2.1rem;
     text-align: justify;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .skills_section .skills_text {
+    width: 80%;
   }
 }
 
@@ -67,7 +94,7 @@
   margin-top: 10px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .skills_section .skills_list {
     margin: auto;
     -ms-flex-wrap: wrap;
@@ -118,5 +145,11 @@
 .skills_section .also_skills ul li {
   display: inline-block;
   padding: 5px;
+}
+
+@media screen and (max-width: 1444px) {
+  .skills_section .also_skills {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=skills.css.map */

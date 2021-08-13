@@ -8,8 +8,24 @@
   background-color: #1c1c1c;
 }
 
+.light_theme nav ul i {
+  color: #fff;
+}
+
+.light_theme .btn_nav {
+  color: #fff;
+}
+
 .light_theme .hero {
   color: #1c1c1c;
+}
+
+.light_theme .computer_drawing .stand {
+  background-color: #1c1c1c;
+}
+
+.light_theme .computer_drawing .space_bar {
+  background-color: #1c1c1c;
 }
 
 .light_theme .squares_about div {
@@ -22,6 +38,10 @@
 
 .light_theme .text_about .btn_about a {
   color: #1c1c1c;
+}
+
+.light_theme .text_about .btn_about:hover a {
+  color: #fff;
 }
 
 .light_theme .hobbies h3 {

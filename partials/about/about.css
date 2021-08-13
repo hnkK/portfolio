@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 .about {
   max-width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: auto;
+  padding-bottom: 300px;
 }
 
 .about .container_about {
@@ -19,37 +21,87 @@
   margin: auto;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1080px) {
   .about .container_about {
     width: 100%;
   }
 }
 
-.about .squares_about {
-  width: 50%;
+@media screen and (max-width: 1444px) {
+  .about .container_about {
+    width: 80%;
+  }
 }
 
-.about .squares_about div {
+.about .smartphone_container .smartphone_drawing {
   border: 1px solid #fff;
-  height: 200px;
-  width: 200px;
+  border-radius: 15px;
+  height: 500px;
+  width: 225px;
+  position: relative;
 }
 
-.about .squares_about .square_2 {
-  margin-left: 150px;
-  margin-top: -50px;
-  height: 300px;
+.about .smartphone_container .smartphone_drawing .camera {
+  border: 1px solid #fff;
+  height: 20px;
+  width: 80px;
+  margin: auto;
+  border-radius: 5px;
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media screen and (max-width: 860px) {
-  .about .squares_about {
+.about .smartphone_container .smartphone_drawing .camera .lens {
+  height: 12px;
+  width: 12px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  margin: auto;
+}
+
+.about .smartphone_container .smartphone_drawing .smartphone_button {
+  border: 3px solid #fff;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: 3%;
+  left: 40%;
+  border-radius: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .smartphone_container .smartphone_drawing .smartphone_button .inlay {
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 60px;
+}
+
+@media screen and (max-width: 1000px) {
+  .about .smartphone_container {
     display: none;
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .about .squares_about {
-    width: 40%;
+@media screen and (max-width: 1444px) {
+  .about .smartphone_container {
+    width: 80%;
   }
 }
 
@@ -74,9 +126,9 @@
   margin-top: 15px;
   width: 100%;
   text-align: justify;
-  font-weight: lighter;
   line-height: 1.7rem;
-  font-family: "Noto Sans JP", sans-serif;
+  font-size: 0.9rem;
+  font-family: OPEN SANS, sans-serif;
 }
 
 .about .text_about .btn_about {
@@ -95,7 +147,7 @@
   font-family: Roboto;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1444px) {
   .about .text_about {
     margin-left: 0;
     width: 80%;
@@ -117,6 +169,12 @@
   margin-right: auto;
 }
 
+@media screen and (max-width: 768px) {
+  .about .hobbies hr {
+    width: 60%;
+  }
+}
+
 .about .hobbies_icons {
   text-align: center;
   padding: 15px;
@@ -132,5 +190,11 @@
   font-size: 2rem;
   margin-left: 15px;
   margin-right: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .about .hobbies_icons i {
+    font-size: 1.5rem;
+  }
 }
 /*# sourceMappingURL=about.css.map */

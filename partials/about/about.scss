@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
 .about {
   max-width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: auto;
+  padding-bottom: 300px;
 
   .container_about {
     display: flex;
@@ -9,28 +12,63 @@
     justify-content: center;
     width: 50%;
     margin: auto;
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1080px) {
       width: 100%;
+    }
+    @media screen and (max-width: 1444px) {
+      width: 80%;
     }
   }
 
-  .squares_about {
-    width: 50%;
-    div {
+  .smartphone_container {
+    .smartphone_drawing {
       border: 1px solid #fff;
-      height: 200px;
-      width: 200px;
+      border-radius: 15px;
+      height: 500px;
+      width: 225px;
+      position: relative;
+      .camera {
+        border: 1px solid #fff;
+        height: 20px;
+        width: 80px;
+        margin: auto;
+        border-radius: 5px;
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .lens {
+          height: 12px;
+          width: 12px;
+          border: 1px solid #fff;
+          border-radius: 15px;
+          margin: auto;
+        }
+      }
+      .smartphone_button {
+        border: 3px solid #fff;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        bottom: 3%;
+        left: 40%;
+        border-radius: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .inlay {
+          height: 40px;
+          width: 40px;
+          background-color: #fff;
+          border-radius: 60px;
+        }
+      }
     }
-    .square_2 {
-      margin-left: 150px;
-      margin-top: -50px;
-      height: 300px;
-    }
-    @media screen and (max-width: 860px) {
+    @media screen and (max-width: 1000px) {
       display: none;
     }
-    @media screen and (max-width: 1024px) {
-      width: 40%;
+    @media screen and (max-width: 1444px) {
+      width: 80%;
     }
   }
 
@@ -52,9 +90,9 @@
       margin-top: 15px;
       width: 100%;
       text-align: justify;
-      font-weight: lighter;
       line-height: 1.7rem;
-      font-family: "Noto Sans JP", sans-serif;
+      font-size: 0.9rem;
+      font-family: OPEN SANS, sans-serif;
     }
 
     .btn_about {
@@ -72,7 +110,7 @@
         font-family: Roboto;
       }
     }
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 1444px) {
       margin-left: 0;
       width: 80%;
     }
@@ -92,6 +130,9 @@
       width: 40%;
       margin-left: auto;
       margin-right: auto;
+      @media screen and (max-width: 768px) {
+        width: 60%;
+      }
     }
   }
 
@@ -107,6 +148,9 @@
       font-size: 2rem;
       margin-left: 15px;
       margin-right: 15px;
+      @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
+      }
     }
   }
 }

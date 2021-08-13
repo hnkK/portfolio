@@ -4,10 +4,26 @@
 
   nav {
     background-color: #1c1c1c;
+    ul i {
+      color: #fff;
+    }
+  }
+
+  .btn_nav {
+    color: #fff;
   }
 
   .hero {
     color: #1c1c1c;
+  }
+
+  .computer_drawing {
+    .stand {
+      background-color: #1c1c1c;
+    }
+    .space_bar {
+      background-color: #1c1c1c;
+    }
   }
 
   .squares_about {
@@ -24,6 +40,12 @@
     .btn_about {
       a {
         color: #1c1c1c;
+      }
+    }
+
+    .btn_about:hover {
+      a {
+        color: #fff;
       }
     }
   }

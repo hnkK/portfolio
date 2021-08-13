@@ -1,5 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap");
 /*
 font-family: 'Noto Sans JP', sans-serif;
 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap");
+/*
+font-family: 'Open Sans', sans-serif;
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+/*
+font-family: MADE TOMMY, sans-serif;
+*/
+@font-face {
+  font-family: 'MADE TOMMY';
+  src: url("../../Fonts/MADE TOMMY/reg.otf") format("opentype");
+}
 /*# sourceMappingURL=utilities.css.map */
