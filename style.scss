@@ -6,10 +6,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 html {
-  font-family: MADE TOMMY;
+  font-family: 'MADE TOMMY';
   scroll-behavior: smooth;
   //--res: calc(0.01 * 10vmin);
 }
@@ -18,14 +22,13 @@ body {
   background-color: #1c1c1c;
 }
 
-
-// Navbar CSS 
+// Utilities CSS 
 @import url('./partials/utilities/utilities.css');
 
 // Navbar CSS 
 @import url('./partials/navbar/navbar.css');
 
-// Navbar CSS 
+// Side Menu CSS 
 @import url('./partials/side_menu/side_menu.css');
 
 // Hero Section CSS

@@ -1,8 +1,7 @@
 const navbar = document.querySelector("#navbar");
+const burger_menu = document.querySelector("#burger_menu");
 const sideMenu = document.querySelector("#side_menu");
 const body = document.querySelector("body");
-
-console.log(body);
 
 window.addEventListener("scroll", () => {
   const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
@@ -16,11 +15,23 @@ window.addEventListener("scroll", () => {
   }
 });
 
-function hide() {
-  sideMenu.classList.add("hide");
-  console.log("xd");
+window.onload = function(){
+    document.onclick = function(e){
+        if(e.target.id == 'side_menu'){
+            sideMenu.style.display = 'none';
+        }
+        if(e.target === burger_menu){
+          sideMenu.style.display = 'block';
+        }
+    };
+};
+
+function displayMenu() {
+  sideMenu.classList.toggle("display_menu");
 }
 
 function switchTheme() {
   body.classList.toggle("light_theme");
 }
+
+

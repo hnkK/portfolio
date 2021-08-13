@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f57d76244d.js" crossorigin="anonymous"></script>
 </head>
-<body class="light_theme">
+<body>
 
     <nav id="navbar">
         <ul>
@@ -16,21 +16,22 @@
             <li><button class="btn_nav fill"><a href="#skills">Mes compétences</a></button></li>
             <li><button class="btn_nav fill"><a href="#contact">Me contacter</a></button></li>
             <i class="fas fa-sun" onclick="switchTheme()"></i>
+            <div id="burger_menu "class="burger_menu" onclick="displayMenu()">
+                <i class="fas fa-bars"><a href="#"></a></i>
+            </div>
         </ul>
-        <div class="burger_menu" onclick="hide()">
-            <i class="fas fa-bars"><a href="#"></a></i>
-        </div>
+
     </nav>
 
     <div id="side_menu" class="side_menu">
-        <ul>
-            <li>Qui suis-je</li>
-            <li>Mes compétences</li>
-            <li>Me contacter</li>
+        <ul id="side_menu_list">
+            <li><a href="#about">Qui suis-je</a></li>
+            <li><a href="#skills">Mes compétences</a></li>
+            <li><a href="#contact">Me contacter</a></li>
         </ul>
     </div>
 
-    <section class="hero">   
+    <section id="hero" class="hero">   
         <div class="hero_text animated_title">
             <hr>
             <div class="text-top">
@@ -42,44 +43,50 @@
             <hr>
             <div class="hero_icons text-bottom">
                 <hr />
-                <i></i>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-github-square"></i>
-                <i class="fas fa-envelope-square"></i>
+                <a href="https://www.linkedin.com/in/kevin-henkes/" target="blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/hnkK" target="blank">
+                    <i class="fab fa-github-square"></i>
+                </a>
+                <a href="mailto:henkeskevin@gmail.com" target="blank">
+                    <i class="fas fa-envelope-square"></i>
+                </a>
             </div>
         </div>
-    <div class="container_drawing">
-        <div class="computer_drawing">
-            <div class="screen">
-                <span><code>< h1 > Hello World < / h1 ></h1></code></span>
-                <br />
-            </div>
-            <div class="stand"></div>
-            <div class="keyboard">
-                <div class="space_bar"></div>
+        <div class="computer_container">
+            <div class="computer_drawing">
+                <div class="screen">
+                </div>
+                <div class="stand"></div>
+                <div class="keyboard">
+                    <div class="space_bar"></div>
+                </div>
             </div>
         </div>
-    </div>
-
     </section>
 
     <section id="about" class="about">
-
         <div class="container_about">
-            <div class="squares_about">
-                <div class="square_1"></div>
-                <div class="square_2"></div>
+            <div class="smartphone_container ">
+                <div class="smartphone_drawing">
+                    <div class="camera">
+                        <div class="lens"></div>
+                    </div>
+                    <div class="smartphone_button">
+                        <div class="inlay"></div>
+                    </div>
+                </div>
             </div>
             <div class="text_about">
                 <h2>A propos</h2>
                 <hr />
-                <p>Tout d'abord, merci de votre visite sur mon site ! &#128515;</p>
-                <p>Je m'appelle Kévin, 27 ans et encore toutes ses dents (mais plus tous ses cheveux), 
-                    diplômé en tant que Web designer, je me suis principalement spécialisé dans le développement
+                <p>Tout d'abord, merci de votre visite sur mon site !</p>
+                <p>Je m'appelle Kévin, diplômé en tant que Web designer, je me suis principalement spécialisé dans le développement
                     Web côté Front jusqu'à aujourd'hui.
                 </p>
                 <p>Durant mon temps libre, je pratique de la guitare electrique, avec une grosse affinité pour le
-                    Blues / Hard rock (Jeff Healey, Iron Maiden, Slash, pour en citer quelque uns &#9994;)
+                    Blues / Hard rock ( Jeff Healey, Iron Maiden, Slash, pour en citer quelques uns )
                 </p>
                 <p>Si vous souhaitez avoir un aperçu plus complet de mon parcours, je vous invite à jeter un coup d'oeil
                     à mon CV ! 	
@@ -90,7 +97,6 @@
                 </button>
             </div>
         </div>
-
         <div class="hobbies">
             <h3>Mes centres d'intêrets</h3>
             <hr>
@@ -101,7 +107,6 @@
                 <i class="fas fa-car-alt"></i>
             </div>
         </div>
-
     </section>
 
 
@@ -165,18 +170,14 @@
             <h2>Me contacter</h2>
             <hr>
         </div>
-
         <div class="contact_infos">
-            <h3>Mes informations pour me joindre</h3>
+            <h3>Vous pouvez me contacter directement ou me laisser un message !</h3>
             <address>
                 <p>Téléphone : 0489 20 72 61</p>
                 <p>Avenue de Beaufays 9a - 4130 Tilff ( Liège )</p>
                 <a href="mailto:henkeskevin@gmail.com">henkeskevin@gmail.com</a>
             </address>
         </div>
-
-        <hr>
-
         <form id="form">
             <input id="name" type="text" placeholder="NOM">
             <input id="email" type="text" placeholder="E-MAIL">
@@ -187,10 +188,11 @@
 
     <footer>
         <div class="btn_to_top">
-            <i class="fas fa-arrow-up"></i>
+            <a href="#hero"><i class="fas fa-arrow-up"></i></a>
         </div>
     </footer>
     
+
     <script src="app.js"></script>
 </body>
 </html>
